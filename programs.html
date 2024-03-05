@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>برامج موهبة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .program {
+            margin-bottom: 10px;
+        }
+        
+        .program button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>برامج موهبة</h1>
+    </header>
+
+    <main>
+        <div class="program">
+            <h2>البرنامج الوطني للكشف عن الموهوبين</h2>
+            <p>تعريف البرنامج ومعلومات إضافية عنه.</p>
+            <button onclick="openProgramDetails('national')">تفاصيل البرنامج</button>
+        </div>
+
+        <div class="program">
+            <h2>برامج موهبة الإثرائية</h2>
+            <p>تعريف البرنامج ومعلومات إضافية عنه.</p>
+            <button onclick="openProgramDetails('enrichment')">تفاصيل البرنامج</button>
+        </div>
+
+        <div class="program">
+            <h2>برنامج موهبة الإثرائي الأكاديمي</h2>
+            <p>تعريف البرنامج ومعلومات إضافية عنه.</p>
+            <button onclick="openProgramDetails('academic')">تفاصيل البرنامج</button>
+        </div>
+        <footer>
+            تقديم الطالب : عماد يعقوب عبدالعال
+        </footer>
+
+    <script>
+        function openProgramDetails(programName) {
+            window.open(programName + ".html");
+        }
+    </script>
+</body>
+</html>
